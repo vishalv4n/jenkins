@@ -7,6 +7,9 @@ app.get("/",(request,response)=>{
 app.get("/pass",(request,response)=>{
     response.send("pass student list")
 })
+app.get("/fail",(request,response)=>{
+response.send("fail student list");
+})
 app.listen(5000,()=>{
     console.log("server started on port no 5000")
 })
